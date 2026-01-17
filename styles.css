@@ -1,66 +1,52 @@
- .intro-text {
+ /* =========================
+   GLOBAL / GENERAL
+========================= */
+
+.intro-text {
   max-width: 650px;
 }
+
+button {
+  background-color: black;
+  color: white;
+}
+
+/* =========================
+   HERO SECTIONS
+========================= */
+
 .hero-section {
-    height: 85vh;
-    background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b");
-    background-size: cover;
-    background-position: center;
-    position: relative;}
+  height: 85vh;
+  background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
 
-  .hero-section .container {
-    position: relative;
-    z-index: 1;}
-  .category-vertical {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
 
-  .category-vertical-card {
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    overflow: hidden;}
+/* =========================
+   ABOUT HERO
+========================= */
 
-  .category-vertical-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;}
-
-  .category-vertical-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;}
-
-  .category-vertical-overlay span {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    opacity: 0.85;}
-
-  .category-vertical-overlay h2 {
-    margin-top: 10px;
-    font-size: 2.5rem;
-    letter-spacing: 2px;}
-   .about-hero {
+.about-hero {
   height: 60vh;
   background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b");
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .about-hero::before {
   content: "";
   position: absolute;
@@ -72,5 +58,113 @@
   position: relative;
   z-index: 1;
 }
+
+/* =========================
+   CATEGORY VERTICAL
+========================= */
+
+.category-vertical {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.category-vertical-card {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.category-vertical-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-vertical-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.category-vertical-overlay span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.category-vertical-overlay h2 {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-dark.active {
+  background-color: white;
+  color: black;
+  border: 2px solid #212529;
+}
+
+.products-btn {
+  font-size: 32px;
+  padding: 16px 36px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   GUIDE BANNER
+========================= */
+
+.guide-banner {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+
+.guide-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.guide-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.guide-overlay h2 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 14px 28px;
+  transition: all 0.3s ease;
+}
+
+.guide-banner:hover .guide-overlay h2 {
+  background-color: white;
+  color: black;
+}
+
 
 

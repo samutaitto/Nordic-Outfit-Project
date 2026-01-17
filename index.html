@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +5,23 @@
   <title>Nordic Outfit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
       <!-- KAIKILLA SIVUILLA SAMA HEADER -->
    <header class="border-bottom">
   <nav class="container py-3 d-flex align-items-center justify-content-between">
-    
-    
-    <a href="index.html" class="logo fw-semibold text-dark text-decoration-none">
-      NORDIC
-    </a>
+    <div class="logo fw-semibold">NORDIC</div>
 
-    
     <div class="d-flex align-items-center gap-4">
-      <a href="about.html" class="text-dark text-decoration-none">
-        About Nordic
-      </a>
-      <a href="products.html" class="text-dark text-decoration-none">
-        Products
-      </a>
-      <a href="contact.html" class="text-dark text-decoration-none">
-        Contact
-      </a>
-      <img src="icons/search.svg" alt="Search" width="18">
-    </div>
+      <a href="index.html" class="btn btn-dark active">Home</a>
+      <a href="womens.html" class="btn btn-dark ">Womens's collection</a>
+      <a href="mens.html" class="btn btn-dark ">Men's collection</a>
+      <a href="about.html" class="btn btn-dark">About Nordic</a>
+      <a href="contact.html" class="btn btn-dark">Contact</a>
+      <button class="btn btn-outline-dark">Search<i class="bi bi-search"></i></button>
+
 
   </nav>
 </header>
@@ -55,34 +46,32 @@
     Timeless Nordic designs crafted from sustainable materials.
     Embrace the essence of Scandinavian simplicity and warmth.
   </p>
-<!--  ja tän -->
 
 <section class="category-vertical">
 
   <!-- WOMEN -->
   <div class="category-vertical-card">
     <img
-      src="https://images.unsplash.com/photo-1630013348468-117ef554794d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src="Images/taustakuva.jpg"
       alt="Women's collection">
     <div class="category-vertical-overlay">
       <span>Most Popular</span>
-      <h2>WOMEN'S COLLECTION</h2>
+      <a href="womens.html" class="btn btn-dark products-btn">WOMEN'S COLLECTION</a>
     </div>
   </div>
 
-  <!-- MEN -->
+<!-- MEN -->
   <div class="category-vertical-card">
     <img
-      src="https://images.unsplash.com/photo-1579419833240-d70be757967a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src="Images/mies_taustakuva.jpg"
       alt="Men's collection">
     <div class="category-vertical-overlay">
       <span>Most Popular</span>
-      <h2>MEN'S COLLECTION</h2>
+      <a href="mens.html" class="btn btn-dark products-btn">MENS'S COLLECTION</a>
     </div>
   </div>
 </section>
 
-</section>
 <section class="container mb-5">
   <div class="d-flex justify-content-center gap-4 flex-wrap">
     <a class="text-dark text-decoration-none border-bottom border-2 pb-1">All Items</a>
@@ -101,7 +90,6 @@
         <span class="text-muted small">KNITWEAR</span>
         <h6 class="mt-1">Nordic Knit Sweater</h6>
         <p class="text-muted small">Merino wool blend with traditional patterns</p>
-        <strong>From $99</strong>
       </article>
     </div>
 
@@ -113,7 +101,6 @@
         <span class="text-muted small">ACCESSORIES</span>
         <h6 class="mt-1">Merino wool beanies and scarves in multiple colors.</h6>
         <p class="text-muted small">Pure merino wool beanies and scarves, offered in multiple colors.</p>
-        <strong>From $39</strong>
       </article>
     </div>
 
@@ -121,26 +108,18 @@
       <article class="product-card">
         <img src="https://images.unsplash.com/photo-1577553187319-4fc1bece5b25?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-2" alt="Winter coats.">
         <span class="text-muted small">OUTERWEAR</span>
-        <h6 class="mt-1">Women’s outerwear designed for Nordic winters..</h6>
+        <h6 class="mt-1">Women’s outerwear designed for Nordic winters.</h6>
         <p class="text-muted small">Designed to keep you warm, wherever winter takes you.</p>
-        <strong>From $159</strong>
       </article>
     </div>
 
-
-  </div>
 </section>
 </main>
 <footer class="border-top pt-5">
   <div class="container">
     <div class="row gy-4">
-
       <div class="col-12 col-md-6 col-lg-3">
-        <h6>
-  <a href="about.html" class="text-dark text-decoration-none">
-    About Nordic
-  </a>
-</h6>
+        <h6><a href="about.html" class="text-dark text-decoration-none">About Nordic</a></h6>
       </div>
 
       <div class="col-6 col-lg-3">
@@ -164,11 +143,10 @@
 
       <div class="col-12 col-lg-3">
         <h6>Connect</h6>
-        <ul class="list-unstyled text-muted small">
-          <li>Instagram</li>
-          <li>Pinterest</li>
-          <li>Newsletter</li>
-        </ul>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-pinterest"></i>
+      </div>
       </div>
 
     </div>
@@ -178,4 +156,3 @@
     </p>
   </div>
 </footer>
-
