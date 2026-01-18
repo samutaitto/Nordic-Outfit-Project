@@ -112,7 +112,7 @@
         </nav>
       </section>
     </aside>
-    
+
     <!-- Shoppaile meidän Instagramissa -->
   </div> </main> <section class="container-fluid bg-light py-5">
   <div class="container text-center">
@@ -143,14 +143,26 @@
 </section>
 
 <script>
-  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    this.style.opacity = '0';
-    setTimeout(() => {
-      this.classList.add('d-none');
-      document.getElementById('thankYouMessage').classList.remove('d-none');
-    }, 400);
-  });
+  
+  const contactForm = document.getElementById('contactForm');
+
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      
+      this.style.opacity = '0';
+      
+      setTimeout(() => {
+        this.classList.add('d-none');
+        const successMessage = document.getElementById('thankYouMessage');
+        if (successMessage) {
+          successMessage.classList.remove('d-none');
+        }
+      }, 400);
+    });
+  }
 </script>
      
 <footer class="border-top pt-5">
