@@ -24,6 +24,134 @@
   </nav>
 </header>
     <!-- Hennan sisältö tulee tähän -->
+<main class="container my-5">
+  <div class="row g-5">
+    
+    <section class="col-md-7">
+      <h1 class="display-5 fw-bold mb-4">Contact Us</h1>
+      <p class="text-muted mb-5">Reach out to our team for inquiries regarding collections, orders, or sustainable partnerships.</p>
+    
+    <!-- Yhteydenottolomake -->
+      <form id="contactForm">
+        <div class="row g-3">
+          <article class="col-md-6">
+            <label class="form-label small fw-bold text-uppercase opacity-75">Full Name</label>
+            <input type="text" class="form-control rounded-0 border-dark py-2" placeholder="John Doe" required>
+          </article>
+
+          <article class="col-md-6">
+            <label class="form-label small fw-bold text-uppercase opacity-75">Email Address</label>
+            <input type="email" class="form-control rounded-0 border-dark py-2" placeholder="john@example.com" required>
+          </article>
+
+          <article class="col-12">
+            <label class="form-label small fw-bold text-uppercase opacity-75">Message</label>
+            <textarea class="form-control rounded-0 border-dark" rows="6" placeholder="How can we assist you?" required></textarea>
+          </article>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark w-100 rounded-0 py-3 text-uppercase fw-bold">Send Message</button>
+          </div>
+        </div>
+      </form>
+
+    <!-- Viesti lähetetty onnistuneesti -->
+      <output id="thankYouMessage" class="d-none mt-3 alert alert-dark d-block rounded-0 border-0 text-center">
+        <i class="bi bi-check-circle me-2"></i> Message sent successfully!
+      </output>
+    </section>
+
+    <aside class="col-md-4 offset-md-1">
+
+    <!-- Meidän toimistomme --> 
+      <section class="mb-5">
+        <h2 class="h5 fw-bold text-uppercase mb-4">Our Offices</h2>
+        <address class="fst-normal">
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="https://www.google.com/maps/search/?api=1&query=Mikonkatu+1+Helsinki" 
+                 target="_blank" 
+                 class="text-decoration-none text-dark d-flex align-items-center" 
+                 style="cursor: pointer;">
+                <i class="bi bi-geo-alt me-3"></i>
+                <span>Mikonkatu 1, 00100 Helsinki</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="mailto:hello@nordicoutfit.com" class="text-decoration-none text-dark d-flex align-items-center">
+                <i class="bi bi-envelope me-3"></i>
+                <span>hello@nordicoutfit.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+35891234567" class="text-decoration-none text-dark d-flex align-items-center">
+                <i class="bi bi-telephone me-3"></i>
+                <span>+358 9 123 4567</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+
+    <!-- Aukioloajat -->
+      <section class="mb-5">
+        <h2 class="h5 fw-bold text-uppercase mb-4">Opening Hours</h2>
+        <table class="table table-borderless table-sm mb-0">
+          <tr><td class="text-muted ps-0">Mon – Fri</td><td class="text-end pe-0">10:00 – 18:00</td></tr>
+          <tr><td class="text-muted ps-0">Sat – Sun</td><td class="text-end pe-0">Closed</td></tr>
+        </table>
+      </section>
+
+    <!-- Seuraa meitä -->
+      <section>
+        <h2 class="h5 fw-bold text-uppercase mb-3">Follow Us</h2>
+        <nav class="d-flex gap-4 fs-4">
+          <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-pinterest"></i></a>
+        </nav>
+      </section>
+    </aside>
+    
+    <!-- Shoppaile meidän Instagramissa -->
+  </div> </main> <section class="container-fluid bg-light py-5">
+  <div class="container text-center">
+    <h2 class="h5 fw-bold text-uppercase mb-4">Shop our Instagram</h2>
+    <div class="row g-2">
+      <figure class="col-6 col-md-3 mb-0">
+        <a href="https://www.instagram.com/" target="_blank" style="cursor: pointer;">
+          <img src="Images/WoolJacket.jpg" alt="Ares" class="img-fluid object-fit-cover w-100" style="aspect-ratio: 1/1; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        </a>
+      </figure>
+      <figure class="col-6 col-md-3 mb-0">
+        <a href="https://www.instagram.com/" target="_blank" style="cursor: pointer;">
+          <img src="Images/MiestenVillapaita.jpg" alt="Hehku" class="img-fluid object-fit-cover w-100" style="aspect-ratio: 1/1; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        </a>
+      </figure>
+      <figure class="col-6 col-md-3 mb-0">
+        <a href="https://www.instagram.com/" target="_blank" style="cursor: pointer;">
+          <img src="Images/kuulas.jpg" alt="Kuulas" class="img-fluid object-fit-cover w-100" style="aspect-ratio: 1/1; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        </a>
+      </figure>
+      <figure class="col-6 col-md-3 mb-0">
+        <a href="https://www.instagram.com/" target="_blank" style="cursor: pointer;">
+          <img src="Images/Kanerva.jpg" alt="Kanerva" class="img-fluid object-fit-cover w-100" style="aspect-ratio: 1/1; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        </a>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.opacity = '0';
+    setTimeout(() => {
+      this.classList.add('d-none');
+      document.getElementById('thankYouMessage').classList.remove('d-none');
+    }, 400);
+  });
+</script>
      
 <footer class="border-top pt-5">
   <div class="container text-center">
@@ -33,5 +161,3 @@
   </div>
 </footer>
 
-</body>
-</html>
