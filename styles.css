@@ -23,6 +23,11 @@
   background: rgba(0, 0, 0, 0.35);
 }
 
+.hero-section .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .hero-section .container {
   position: relative;
   z-index: 1;
