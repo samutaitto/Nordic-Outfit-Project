@@ -124,6 +124,99 @@
   border: 2px solid #212529;
 }
 
+body {
+  color: #111;
+  background-color: #fff;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.navbar .nav-link {
+  background-color: #1a1a1a;
+  border-radius: 6px;
+}
+
+.navbar .nav-link:hover {
+  background-color: #000;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  border-radius: 12px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.product-card p.small {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.category-filter a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.category-filter a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.category-filter a:hover::after {
+  width: 100%;
+}
+
+.guide-banner {
+  border-radius: 18px;
+}
+
+.guide-banner img {
+  transition: transform 0.4s ease;
+}
+
+.guide-banner:hover img {
+  transform: scale(1.05);
+}
+
+.guide-overlay h2 {
+  border-radius: 999px;
+}
+
 /* Mobile spacing */
 @media (max-width: 991px) {
   .navbar .nav-link {
