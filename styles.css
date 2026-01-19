@@ -2,9 +2,10 @@
   max-width: 650px;
 }
 
-button {
-  background-color: black;
-  color: white;
+.btn-dark,
+.custom-btn {
+  background-color: #111;
+  color: #fff;
 }
 
 .hero-section {
