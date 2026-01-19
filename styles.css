@@ -110,17 +110,16 @@
 }
 
 .navbar .nav-link {
-  background-color: #212529;
-  color: white !important;
+  background-color: #1a1a1a;
+  color: #fff !important;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .navbar .nav-link:hover {
   background-color: #000;
-  color: white !important;
 }
 
 .navbar .nav-link.active {
@@ -134,17 +133,8 @@ body {
   background-color: #fff;
 }
 
-section {
+section:not(:last-of-type) {
   margin-bottom: 5rem;
-}
-
-.navbar .nav-link {
-  background-color: #1a1a1a;
-  border-radius: 6px;
-}
-
-.navbar .nav-link:hover {
-  background-color: #000;
 }
 
 .product-card {
